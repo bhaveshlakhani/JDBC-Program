@@ -137,16 +137,5 @@ public class Myfirstjdbcprog1
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-	
-	
 }

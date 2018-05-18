@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 import com.mysql.jdbc.Driver;
 
-public class Myfirstjdbcprog 
+public class TestMySQL 
 {
 
 	public static void main(String[] args) throws ClassNotFoundException
@@ -46,59 +46,15 @@ public class Myfirstjdbcprog
 		     */
 		
 		
-		
-		
-		//String url="jdbc:mysql://localhost:3306/test"+"?user=j2ee&password=j2ee";
-	      String url="jdbc:mysql://bhavesh-pc:3306/test?user=root&password=root";
-		
+
+		   String url="jdbc:mysql://localhost:3306/test"+"?user=root&password=root";
+	    
 		   con=DriverManager.getConnection(url);
 		   
 		   System.out.println("connection successfull"+con);
 		
 		
-      
-		
-		
-		
-		
-		/*
-		 * 
-		 * issues sql query via connection
-		 * 
-		 */
-		
-		
-		//String query="select *from student";
-		
-		//String query="select *from employee";
-
-	//	stmt=con.createStatement();
-		//rs=stmt.executeQuery(query);
-		
-		
-		
-		
-		/*
-		 * 
-		 * process the result return by sql query
-		 */
-		
-		/*while(rs.next())
-		{
-			String fname=rs.getString("fname");
-			String mname=rs.getString("mname");
-			String lname=rs.getString("lname");
-			
-			
-			
-			System.out.println("first name:"+fname);
-			System.out.println("middle name:"+mname);
-			System.out.println("last name:"+lname);
-			
-			System.out.println("-----------------------------------------");
-			
-				
-		}*/
+     
 		
 		}
 		catch(SQLException e)
